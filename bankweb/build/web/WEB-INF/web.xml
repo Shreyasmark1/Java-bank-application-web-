@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Registration</servlet-name>
+        <servlet-class>user.Registration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>user.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>deposite</servlet-name>
+        <servlet-class>user.deposite</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>widthdrawservlet</servlet-name>
+        <servlet-class>user.widthdrawservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>display</servlet-name>
+        <servlet-class>user.display</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Registration</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deposite</servlet-name>
+        <url-pattern>/deposite</url-pattern>
+    </servlet-mapping>
+    <!--    <servlet-mapping>
+        <servlet-name>withdraw</servlet-name>
+        <url-pattern>/withdraw</url-pattern>
+    </servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>widthdrawservlet</servlet-name>
+        <url-pattern>/widthdrawservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>display</servlet-name>
+        <url-pattern>/display</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
